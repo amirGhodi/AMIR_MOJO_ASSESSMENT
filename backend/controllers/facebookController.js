@@ -43,9 +43,7 @@ exports.getFacebookPages = async (req, res) => {
 };
 
 exports.getPageInsights = async (req, res) => {
-  const { pageId, accessToken } = req.body;
-  const since = req.query.since;
-  const until = req.query.until;
+  const { pageId, accessToken, since, until } = req.body;
   const metrics = ['page_fans','page_impressions', 'page_post_engagements', 'page_actions_post_reactions_total'];
   if (!pageId || !accessToken) {
     return res.status(400).json({ error: 'Page ID and access token are required' });
