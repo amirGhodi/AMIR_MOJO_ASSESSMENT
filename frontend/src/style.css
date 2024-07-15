@@ -1,0 +1,150 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hashtag#e9ecef;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* App Container */
+    .App {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: hashtag#ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Header */
+    h1 {
+    text-align: center;
+    color: hashtag#343a40;
+    }
+    
+    /* Facebook Login Button */
+    .FacebookLoginButton {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    }
+    
+    /* User Profile */
+    .UserProfile {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .UserProfile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid hashtag#007bff;
+    margin-bottom: 10px;
+    }
+    
+    .UserProfile h1 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: hashtag#007bff;
+    }
+    
+    /* Page List Dropdown */
+    .PageListDropdown {
+    margin-bottom: 20px;
+    }
+    
+    .PageListDropdown select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid hashtag#007bff;
+    border-radius: 4px;
+    background-color: hashtag#f8f9fa;
+    transition: border-color 0.3s;
+    }
+    
+    .PageListDropdown select:focus {
+    outline: none;
+    border-color: hashtag#0056b3;
+    }
+    
+    /* Date Range Inputs */
+    .DateRange {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    }
+    
+    .DateRange label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    color: hashtag#343a40;
+    }
+    
+    .DateRange input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid hashtag#ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    }
+    
+    .DateRange input:focus {
+    outline: none;
+    border-color: hashtag#007bff;
+    }
+    
+    /* Button Styles */
+    button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    color: hashtag#ffffff;
+    background-color: hashtag#007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    }
+    
+    button:hover {
+    background-color: hashtag#0056b3;
+    }
+    
+    /* Insights Section */
+    .insight-group {
+    margin-top: 20px;
+    }
+    
+    .insight-card {
+    background-color: hashtag#f8f9fa;
+    border: 1px solid hashtag#ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    }
+    
+    .insight-card:hover {
+    transform: scale(1.02);
+    }
+    
+    .insight-card h2 {
+    font-size: 1.5em;
+    color: hashtag#343a40;
+    }
+    
+    .insight-card p {
+    font-size: 1.2em;
+    color: #495057;
+    }
+    
+    /* Footer */
+    footer {
+    text-align: center;
+    margin-top: 20px;
+    color: hashtag#6c757d;
+    }

@@ -110,13 +110,20 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Facebook Insights Dashboard</h1>
       {!user ? (
-        <FacebookLoginButton responseFacebook={responseFacebook} />
+        <div className="FacebookLoginButton">
+          <FacebookLoginButton responseFacebook={responseFacebook} />
+        </div>
       ) : (
         <>
-          <UserProfile user={user} />
-          <PageListDropdown pages={pages} handleChange={handlePageChange} />
-          <div>
+          <div className="UserProfile">
+            <UserProfile user={user} />
+          </div>
+          <div className="PageListDropdown">
+            <PageListDropdown pages={pages} handleChange={handlePageChange} />
+          </div>
+          <div className="DateRange">
             <label>
               Since:
               <input
@@ -137,9 +144,14 @@ function App() {
             </label>
           </div>
           <button onClick={handleSubmit}>Get Insights</button>
-          <PageInsights insights={insights} />
+          <div className="insight-group">
+            <PageInsights insights={insights} />
+          </div>
         </>
       )}
+      <footer>
+        <p>&copy; 2024 Facebook Insights App</p>
+      </footer>
     </div>
   );
 }
